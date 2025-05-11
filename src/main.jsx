@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import AcademicRecords from "./components/AcademicRecords";
+import ChatBot from "./components/ChatBot";
 import Dashboard from "./components/Dashboard";
 import DropClasses from "./components/DropClasses";
 import EnrollmentAppointment from "./components/EnrollmentAppointment";
@@ -67,6 +68,7 @@ createRoot(document.getElementById("root")).render(
         <Route path="/year-four/first-semester" element={<SemesterCourses year="Fourth Year" semester="First Semester" />} />
         <Route path="/year-four/second-semester" element={<SemesterCourses year="Fourth Year" semester="Second Semester" />} />
       </Routes>
+      <ChatBot />
     </Router>
   </StrictMode>
 );
